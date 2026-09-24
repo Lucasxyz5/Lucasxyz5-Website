@@ -1,0 +1,52 @@
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(134, 134, 85);
+
+    padding: 0.5rem;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.separator {
+    font-size: 150%;
+    gap: 5px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar a {
+    color: blue;
+    text-decoration: none;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+.nav-bar a:hover {
+    color: purple;
+    background-color: lightblue;
+    text-decoration: none;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info-introduction {
+    padding-right: 10px;
+    font-weight: bold;
+}
