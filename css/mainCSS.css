@@ -22,6 +22,7 @@ body {
     width: 32%;
     border: 10px;
     border-style: inset;
+    border-color: brown;
     margin-right: 5%;
 }
 
