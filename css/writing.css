@@ -1,45 +1,60 @@
-#hoot {
+.hoot {
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin: 1%;
 }
 
-#hoot img {
-    width: 25%;
+.hoot img {
+    width: 15%;
     margin-right: 5%;
 }
 
-#hoot p {
+.hoot p {
     width: 55%;
     font-size: 1.2em;
     line-height: 1.6;
-
-    display: grid;
-    align-items: center;
 }
 
-hr {
-    width: 80%;
+.hoot p a {
+    color: blue;
+    text-decoration: none;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
 }
 
-embed {
-    margin-left: 5%;
-    width: 90%;
-    height: 28em;
-    background-color: rgb(236, 234, 250);
+.hoot p a:hover {
+    color: blue;
+    background-color: lightblue;
+    text-decoration: none;
 }
 
-#personal {
+.personal {
     margin-left: 4%;
 }
 
-#back_forward_buttons {
+.back_forward_buttons {
     margin-left: 4%;
     display: flex;
 }
 
-#back_forward_buttons p {
+.back_forward_buttons p {
     margin-right: 3%;
     color: blue;
     text-decoration: underline;
+}
+
+#story-container {
+    width: min(1000px, 90%);
+    border: 10px;
+    border-style: inset;
+    border-color: brown;
+    margin: 2rem auto;
+}
+
+#story-container iframe {
+    width: 100%;
+    height: 80vh;
+    border: none;
 }

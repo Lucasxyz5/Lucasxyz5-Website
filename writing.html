@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/writing.css">
+<link rel="stylesheet" href="css/storyviewer.css">
 <html lang="en-US">
     <head>
         <meta charset="Windows-1252">
@@ -11,24 +12,29 @@
     </head>
     <body>
         <div id="navbar"></div> <script src="js/navbarfetch.js"></script>
-        <div id="official">
-            <div id="hoot" class="flex-container">
+        <div class="official">
+            <div class="hoot" class="flex-container">
                 <img src="images/brandeis_hoot.png" alt="Brandeis Hoot logo">
                 <p>
                     I have held one professional writing position in my life, at the student newspaper of Brandeis University, 
-                    <a href="https://brandeishoot.com/profile/lucas-alexander/single-author/"> The Hoot </a>
+                    <a href="https://brandeishoot.com/about/"> The Hoot </a>
                 </p>
             </div>
         </div>
         <hr>
-        <div id="unoffical">
-            <div id="personal">
-                <p>I also write a lot in my free time. I keep most of this writing private. I often write long form</p>
-                <p>Here are a few short stories that I've written, for you to peruse. These include samples from both my personal and professional work: </p>
+        <div clas="unoffical">
+            <div class="personal">
+                <p>I also write a lot in my free time. Much of this work is private, but I've included several samples for you here. </p>
             </div>
-            <div id="storyplace"> 
-                <div id="back_forward_buttons" class="flex-container"> <p id="backbutton"> Back </p> <p id="forwardbutton"> Next </p> </div>
-                <embed id="story" src="stories/story1.txt">
+            <div class="storyplace"> 
+                <aside class="story-select"> 
+                    <h2> Stories </h2>
+                    <button class="story-button active" data-document="files/MermaidAndTheSkyPearl.pdf"> The Mermaid and the Sky Pearl </button>
+                    <button class="story-button" data-document="files/TheRabbitandTheWolf.pdf"> The Rabbit and the Wolf </button>
+                    <h2> Poems</h2>
+                    <button class="story-button" data-document="files/ThatQuietMoment.pdf"> That Quiet Moment </button>
+                </aside>
+                <main class="story-container"> <iframe src="files/MermaidAndTheSkyPearl.pdf"> </iframe></main>
             </div>
         </div>
         <script src="js/storydisplay.js"></script>

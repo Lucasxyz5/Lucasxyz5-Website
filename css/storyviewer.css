@@ -1,0 +1,60 @@
+.storyplace {
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    margin: 2rem auto;
+}
+
+.story-select {
+    width: 220px;
+    padding: 1.5rem;
+
+    background: antiquewhite;
+
+    border: 1px solid #aaa;
+    border-radius: 8px 0 0 8px;
+}
+
+.story-select h2 {
+    margin-top: 0;
+}
+
+.story-button {
+    display: block;
+    width: 100%;
+
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+
+    text-align: left;
+    font-size: 1rem;
+
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.story-button:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.story-button.active {
+    background: rgba(0, 0, 0, 0.12);
+    font-weight: bold;
+}
+
+.story-container {
+    flex: 1;
+}
+
+.story-container iframe {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #aaa;
+    border-left: none;
+
+    border-radius: 0 8px 8px 0;
+}

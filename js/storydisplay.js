@@ -1,21 +1,15 @@
-back = document.getElementById("backbutton");
-forward = document.getElementById("forwardbutton");
-current = document.getElementById("story");
-const stories = ["stories/story1.txt", "stories/story2.txt"];
-const length = 1;
-pos = 0;
+const buttons = document.querySelectorAll(".story-button");
+const viewer = document.querySelector(".story-container iframe");
 
-back.addEventListener("click", function(){ 
-    pos -= 1;
-    if (pos < 0) {
-        pos = length;
-    }
-    current.src = stories[pos];
- });
-forward.addEventListener("click", function(){ 
-    pos += 1;
-    if (pos > length) {
-        pos = 0;
-    }
-    current.src = stories[pos];
- });
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+
+        viewer.src = button.dataset.document;
+
+        buttons.forEach(button => {
+            button.classList.remove("active");
+        });
+
+        button.classList.add("active");
+    });
+});
