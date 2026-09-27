@@ -1,0 +1,12 @@
+body {
+    background-color: antiquewhite;
+    background-image: url("/images/backgrounds/flowers2.jpg");
+    background-blend-mode: overlay;
+    color: rgb(28, 2, 28);
+    font-family: 'Lucida Grande', 'Geneva', sans-serif;
+    margin: 0;
+}
+
+hr {
+    width: 80%;
+}
