@@ -3,45 +3,56 @@
     width: 90%;
     height: 80vh;
     margin: 2rem auto;
+
+    border: 10px;
+    border-style: inset;
+    border-color: brown;
+
+    background-color: rgb(134, 134, 85);
 }
 
 .story-select {
     width: 220px;
     padding: 1.5rem;
 
-    background: antiquewhite;
-
     border: 1px solid #aaa;
-    border-radius: 8px 0 0 8px;
 }
 
 .story-select h2 {
     margin-top: 0;
+    text-decoration: underline;
 }
 
 .story-button {
     display: block;
     width: 100%;
 
-    padding: 0.8rem;
     margin-bottom: 0.5rem;
+
+    color: brown;
+    text-decoration: none;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
 
     text-align: left;
     font-size: 1rem;
 
     background: transparent;
     border: none;
-    border-radius: 5px;
 
     cursor: pointer;
 }
 
 .story-button:hover {
-    background: rgba(0, 0, 0, 0.08);
+    color: blue;
+    background-color: lightblue;
+    text-decoration: none;
 }
 
 .story-button.active {
-    background: rgba(0, 0, 0, 0.12);
+    color: blue;
+    background-color: lightblue;
     font-weight: bold;
 }
 
@@ -55,6 +66,4 @@
 
     border: 1px solid #aaa;
     border-left: none;
-
-    border-radius: 0 8px 8px 0;
 }
